@@ -40,21 +40,21 @@ if k==1:
     add()
 
 # Subtract if the user chooses
-if k==2:
+elif k==2:
     print("You are about to subtract.")
     subtract()
 
 # Multiply if the user chooses
-if k==3:
+elif k==3:
     print("You are about to multiply.")
     multiply()
 
 # Divide if the user chooses
-if k==4:
+elif k==4:
     print("You are about to divide.")
     divide()
 
 # Square if the user chooses
-if k==5:
+elif k==5:
     print("You are about to square.")
     square()
