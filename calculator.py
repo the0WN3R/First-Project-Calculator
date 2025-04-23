@@ -1,79 +1,60 @@
-def ask():
-  x = float(input("What is the first number? "))
-  y = float(input("What is the second number? "))
-  return x, y
- 
- # Create the function to divide
+# Create the function to divide
 def divide():
-  x, y = ask()
-  z = round(x/y, 4)
-  print("The quotient is ", z)
- 
- # Create the function to use powers
-def powers():
-  x = float(input("What number would you like to raise? "))
-  y = float(input("What would you like to raise it to the power of? "))
-  z = round(x ** y, 4)
-  print("The answer is ", z)
- 
- # Create the function to add
+    x = float(input("What is the first number? "))
+    y = float(input("What is the second number? "))
+    z = round(x / y, 2)
+    print("The quotient is ", z)
+
+# Create the function to square
+def square():
+    a = int(input("What's the first number? "))
+    print("The squared answer is ", a * a)
+
+# Create the function to add
 def add():
-  x, y = ask()
-  z = round(x + y, 4)
-  print("The sum is ", z)
- 
- # Create the function to subtract
+    b = float(input("What is the first number? "))
+    c = float(input("What is the second number? "))
+    d = round(b + c, 2)
+    print("The sum is ", d)
+
+# Create the function to subtract
 def subtract():
-  x, y = ask()
-  z = round(x - y, 4)
-  print("The difference is ", z)
- 
- # Create the function to multiply
+    e = float(input("What is the first number? "))
+    f = float(input("What is the second number? "))
+    g = round(e - f, 2)
+    print("The difference is ", g)
+
+# Create the function to multiply
 def multiply():
-  x, y = ask()
-  z = round(x * y, 4)
-  print("The product is ", z)
+    h = float(input("What is the first number? "))
+    i = float(input("What is the second number? "))
+    j = round(h * i, 2)
+    print("The product is ", j)
 
-# Create the function to root
-def square_root():
-    x = float(input("What would you like to take the square root of? "))
-    if x < 0:
-        print("Error")
-    else:
-        print(round(x ** .5, 4))
- 
- # Determine which function the user would like to use
-k = int(input("What would you like to do? 1 is add, 2 is subtract, 3 is multiply, 4 is divide, 5 is raise to the power of _, and 6 is square root."))
- 
- # Add if the user chooses
+# Determine which function the user would like to use
+k = int(input("What would you like to do? 1 is add, 2 is subtract, 3 is multiply, 4 is divide, and 5 is square. "))
+
+# Add if the user chooses
 if k==1:
-  print("You are about to add.")
-  add()
- 
- # Subtract if the user chooses
-elif k==2:
-  print("You are about to subtract.")
-  subtract()
- 
- # Multiply if the user chooses
-elif k==3:
-  print("You are about to multiply.")
-  multiply()
- 
- # Divide if the user chooses
-elif k==4:
-  print("You are about to divide.")
-  divide()
- 
- # Square if the user chooses
-elif k==5:
-  print("You are about to use powers.")
-  powers()
+    print("You are about to add.")
+    add()
 
- # Root if the user chooses
-elif k==6:
-  print("You are about to square root.")
-  square_root()
+# Subtract if the user chooses
+if k==2:
+    print("You are about to subtract.")
+    subtract()
 
-else:
-  print("ERROR, invalid selection")
+# Multiply if the user chooses
+if k==3:
+    print("You are about to multiply.")
+    multiply()
+
+# Divide if the user chooses
+if k==4:
+    print("You are about to divide.")
+    divide()
+
+# Square if the user chooses
+if k==5:
+    print("You are about to square.")
+    square()
